@@ -1,0 +1,31 @@
+title exampleapp
+browser->server: HTTP POST .../new_note
+server->browser: Status 302, Redirect to Location
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server->browser: notes.html
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server->browser: main.js
+
+note over browser:
+suorittaa koodia
+pyydetään data.json
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: Status Code: 200, data.json.
+
+note over browser:
+json tuotu
+jatketaan koodin suorittamista
+printataan saatu data.json näytölle.
+end note
+
+
+
+
+
+
+
+

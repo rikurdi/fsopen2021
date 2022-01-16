@@ -1,0 +1,13 @@
+Käyttäjä siirtyy selaimella https://studies.cs.helsinki.fi/exampleapp/spa:
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server->browser: STATUS CODE 304, spa.html
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server->browser: STATUS CODE 304, main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server->browser: STATUS CODE 304, spa.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: STATUS CODE 200, data.json
+
+Selain suorittaa saadun js-koodin ja printtaa
+tekstin ruudulle.

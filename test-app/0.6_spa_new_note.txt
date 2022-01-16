@@ -1,0 +1,11 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server->browser: Status Code 201
+
+suorittaa koodia,
+    html-lomakkeessa käytettiin actionin/methodin sijaan
+    Javascript eventiä, eikä selaimen tarvitse uudelleen ladata.
+
+browser->spa.js: puskee uuden noten listaan ja printtaa 
+redrawNotes()-funktiolla kaikki notet ruudulle.
+browser->server: lähettää serverille datan.
+
